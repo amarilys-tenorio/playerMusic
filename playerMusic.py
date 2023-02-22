@@ -14,7 +14,7 @@ player.geometry("600x800")
 player.config(background='#ee85b5')
 
 
-rootpath = "C:\\Users\\amari\Desktop\music"
+rootpath = filedialog.askdirectory(initialdir="/", title="Choisir le dossier de musique")
 pattern = "*.mp3"
 
 
