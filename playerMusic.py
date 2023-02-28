@@ -29,7 +29,7 @@ loop_png = tk.PhotoImage(file = "loop.png")
 
 def select():
     label.config(text = listBox.get("anchor"))
-    mixer.music.load(rootpath + "\\" + listBox.get("anchor"))
+    mixer.music.load(rootpath + "/" + listBox.get("anchor"))
     mixer.music.play()
 
 def stop():
@@ -42,7 +42,7 @@ def play_next():
     next_song_name = listBox.get(next_song)
     label.config(text = next_song_name)
 
-    mixer.music.load(rootpath + "\\" + next_song_name)
+    mixer.music.load(rootpath + "/" + next_song_name)
     mixer.music.play()
 
     listBox.select_clear(0, 'end')
@@ -55,7 +55,7 @@ def play_prev():
     next_song_name = listBox.get(next_song)
     label.config(text = next_song_name)
 
-    mixer.music.load(rootpath + "\\" + next_song_name)
+    mixer.music.load(rootpath + "/" + next_song_name)
     mixer.music.play()
 
     listBox.select_clear(0, 'end')
